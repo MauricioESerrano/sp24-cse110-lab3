@@ -164,12 +164,12 @@
   
   /* color(colorspace c1 c2 c3) */
   .example3 {
-    color: color(blue orange purple); 
+    background-color: color(red blue green);
   }
   
   /* color-mix(method, color1[ p1], color2[ p2]) */
   .example4 {
-    background-color: color-mix(blend, yellow, blue);
+    background-color: color-mix(in srgb, #34c9eb 25%, white);
   }
   
  

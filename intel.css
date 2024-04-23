@@ -1,8 +1,8 @@
   /* Absolute units */
   p {
-    font-size: 16px; /* pixels */
-    margin: 10px; /* pixels */
-    padding: 5px; /* pixels */
+    font-size: 16px;
+    margin: 10px; 
+    padding: 5px;
   }
 
   /* Margin */
@@ -139,7 +139,7 @@
     background-color: pink;
   }
   
-  /* New Selectors */
+
   /* :has() */
   main:has(ul) {
     background-color: lightgray;
@@ -151,7 +151,7 @@
   }
   
   
-  /* Color */
+
 /* rgb(r, g, b) */
 .example1 {
     color: rgb(255, 0, 0);

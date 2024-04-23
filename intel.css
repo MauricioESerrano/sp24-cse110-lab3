@@ -1,0 +1,272 @@
+  /* Absolute units */
+  p {
+    font-size: 16px; /* pixels */
+    margin: 10px; /* pixels */
+    padding: 5px; /* pixels */
+  }
+
+  /* Margin */
+  h2 {
+    margin: 20px; /* pixels */
+  }
+  /* Padding */
+  p {
+    padding: 20px; /* pixels */
+  }
+  /* Borders */
+  h3 {
+    border: 2px solid purple;
+    border-radius: 5px;
+  }
+  /* Text */
+  h4 {
+    color: #3323;
+    text-decoration: underline;
+    text-align: center;
+  }
+ 
+  /* Experimenting with display property */
+  nav {
+    display: block;
+  }
+  li {
+    display: inline-block;
+  }
+
+  /* Height and width */
+  input[type="text"] {
+    height: 30px;
+    width: 200px;
+  }
+
+  /* Element positioning */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color, green);
+    color: white;
+    text-align: center;
+  }
+  /* Pseudo-class */
+  a:hover {
+    color: purple;
+  }
+
+  /* Flexbox */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Grid */
+  table {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+  /* Fonts */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }   
+  
+
+  /* Class Selector (.class) */
+  .class-selector {
+    color: blue;
+  }
+  
+  /* ID Selector (#id) */
+  #id-selector {
+    background-color: yellow;
+  }
+  
+  /* Universal Selector (*) */
+  * {
+    border: 1px solid black;
+  }
+  
+  /* Element Selector (element) */
+  element-selector {
+    font-weight: bold;
+  }
+  
+  /* Attribute Selector ([attribute=foo]) */
+  [attribute="foo"] {
+    text-decoration: underline;
+  }
+  
+  /* Pseudo-class Selector (e.g. p:hover) */
+  p:hover {
+    background-color: lightblue;
+  }
+  
+  /* Selector List (element, element) */
+  element1,
+  element2 {
+    border: 2px dotted green;
+  }
+  
+
+  /* Descendant Combinator (element element) */
+  parent-element child-element {
+    color: red;
+  }
+  
+  /* Child Combinator (element > element) */
+  parent-element > child-element {
+    font-weight: bold;
+  }
+  
+  /* General sibling combinator (element ~ element) */
+  element1 ~ element2 {
+    font-style: italic;
+  }
+  
+  /* Adjacent sibling combinator (element + element) */
+  element1 + element2 {
+    font-size: larger;
+  }
+  
+  /* Combining Two Selectors (element.class) */
+  element.class {
+    background-color: pink;
+  }
+  
+  /* New Selectors */
+  /* :has() */
+  main:has(ul) {
+    background-color: lightgray;
+  }
+  
+  /* Nested Selectors */
+  nav ul li {
+    list-style: none;
+  }
+  
+  
+  /* Color */
+/* rgb(r, g, b) */
+.example1 {
+    color: rgb(255, 0, 0);
+  }
+  
+  /* hsl(h, s, l) */
+  .example2 {
+    color: hsl(120, 100%, 50%);
+  }
+  
+  /* color(colorspace c1 c2 c3[ / A]) */
+  .example3 {
+    color: color(srgb 0.8 0.2 0.1 / 0.5); 
+  }
+  
+  /* color-mix(method, color1[ p1], color2[ p2]) */
+  .example4 {
+    background-color: color-mix(blend, yellow 50%, blue 30%);
+  }
+  
+ 
+  /* Longhand margin */
+  .example5 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+  
+  /* Shorthand margin */
+  .example6 {
+    margin: 10px 20px 30px 40px;
+  }
+  
+  /* Longhand padding */
+  .example7 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  
+  /* Shorthand padding */
+  .example8 {
+    padding: 10px 20px 30px 40px;
+  }
+  
+
+  /* border-style */
+  .example9 {
+    border-style: dashed;
+  }
+  
+  /* border-color */
+  .example10 {
+    border-color: red;
+  }
+  
+  /* border-width */
+  .example11 {
+    border-width: 2px;
+  }
+  
+  /* Position */
+  .example12 {
+    position: relative;
+  }
+  
+  /* Pseudo-class */
+  .example13:hover {
+    background-color: lightgray;
+  }
+  
+  /* Flexbox */
+
+  .flex-container {
+    display: flex;
+  }
+  
+
+  /* Must use minimum three of the flexbox related attributes */
+  .flex-item {
+    flex: 1;
+    margin: 10px;
+  }
+  
+ 
+  /* apply grid to the display property */
+  .grid-container {
+    display: grid;
+  }
+  
+
+  /* Must use a minimum of three of the grid related attributes */
+  .grid-item {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  
+  /* Media Query */
+  @media screen and (max-width: 768px) {
+    /* Styles for screens with max width of 768px */
+  }
+  
+  /* Fonts */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* Pseudo-class :active */
+.button:active {
+    background-color: red;
+  }
+  
+  /* min-width */
+  .container {
+    min-width: 300px;
+  }

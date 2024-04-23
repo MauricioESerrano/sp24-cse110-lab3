@@ -162,14 +162,14 @@
     color: hsl(120, 100%, 50%);
   }
   
-  /* color(colorspace c1 c2 c3[ / A]) */
+  /* color(colorspace c1 c2 c3) */
   .example3 {
-    color: color(0.8 0.2 0.1 / 0.5); 
+    color: color(blue orange purple); 
   }
   
   /* color-mix(method, color1[ p1], color2[ p2]) */
   .example4 {
-    background-color: color-mix(blend, rgb(122, 122, 70), rgb(83, 83, 143));
+    background-color: color-mix(blend, yellow, blue);
   }
   
  
